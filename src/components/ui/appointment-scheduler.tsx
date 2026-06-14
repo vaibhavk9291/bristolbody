@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { ChevronLeft, ChevronRight, Clock, Globe, User } from "lucide-react"
+import { ChevronLeft, ChevronRight, Clock, Globe, User, CheckCircle2 } from "lucide-react"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
@@ -49,8 +49,9 @@ export function AppointmentScheduler({
   const [currentMonth, setCurrentMonth] = useState(now.getMonth())
   const [currentYear, setCurrentYear] = useState(now.getFullYear())
   const [selectedDate, setSelectedDate] = useState(15)
-  const [selectedTime, setSelectedTime] = useState("15:30")
+  const [selectedTime, setSelectedTime] = useState<string | null>(null)
   const [timeFormat, setTimeFormat] = useState<"12h" | "24h">("12h")
+  const [isConfirmed, setIsConfirmed] = useState(false)
 
   const monthNames = [
     "January",
@@ -137,6 +138,29 @@ export function AppointmentScheduler({
     const ampm = hour >= 12 ? "PM" : "AM"
     const hour12 = hour % 12 || 12
     return `${hour12}:${minutes} ${ampm}`
+  }
+
+  if (isConfirmed && selectedTime) {
+    return (
+      <div className="flex flex-col items-center justify-center w-full max-w-5xl p-12 lg:p-24 rounded-xl border border-brand-navy/10 bg-white shadow-2xl text-center">
+        <div className="w-20 h-20 bg-green-50 rounded-full flex items-center justify-center mb-6">
+          <CheckCircle2 className="text-green-500 w-10 h-10" />
+        </div>
+        <h2 className="text-3xl font-bold text-brand-navy mb-4">Booking Confirmed!</h2>
+        <p className="text-brand-text/70 text-lg max-w-md mb-8">
+          Your appointment for <span className="font-bold text-brand-navy">{getSelectedDayName()}, {getSelectedDateFormatted()} at {formatTime(selectedTime)}</span> is successfully confirmed. You will receive an SMS shortly.
+        </p>
+        <button
+          onClick={() => {
+            setIsConfirmed(false)
+            setSelectedTime(null)
+          }}
+          className="text-brand-teal font-bold hover:underline"
+        >
+          Book another appointment
+        </button>
+      </div>
+    )
   }
 
   return (
@@ -273,7 +297,7 @@ export function AppointmentScheduler({
         </div>
 
         {/* Time Slots */}
-        <div className="space-y-2 overflow-y-auto pr-2 scrollbar-thin max-h-[400px] lg:max-h-[500px]">
+        <div className="flex-1 space-y-2 overflow-y-auto pr-2 scrollbar-thin max-h-[400px] lg:max-h-[500px]">
           {timeSlots.map((slot) => {
             const isSelected = slot.time === selectedTime
             return (
@@ -295,6 +319,17 @@ export function AppointmentScheduler({
             )
           })}
         </div>
+
+        {selectedTime && (
+          <div className="pt-4 mt-4 border-t border-brand-navy/10 animate-fade-in">
+            <button
+              onClick={() => setIsConfirmed(true)}
+              className="w-full bg-brand-teal text-white py-3 rounded-lg font-bold hover:bg-brand-teal/90 transition-colors shadow-lg shadow-brand-teal/20"
+            >
+              Book Now
+            </button>
+          </div>
+        )}
 
         <div className="pt-4 mt-4 border-t border-brand-navy/10 animate-fade-in">
           <p className="text-xs text-brand-text/50 font-medium text-right">powered by <span className="font-bold text-brand-navy">{brandName}</span></p>
