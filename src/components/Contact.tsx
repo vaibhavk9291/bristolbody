@@ -41,7 +41,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold text-brand-navy mb-1">Address</h4>
-                  <p className="text-brand-text/80">Spine, Body & Health, Milton Keynes, MK3 6EB</p>
+                  <p className="text-brand-text/80">MyoSync Clinic, Milton Keynes, MK3 6EB</p>
                 </div>
               </div>
 
@@ -61,7 +61,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold text-brand-navy mb-1">Email</h4>
-                  <a href="mailto:info@spinebodyhealth.co.uk" className="text-brand-text/80 hover:text-brand-teal transition-colors">info@spinebodyhealth.co.uk</a>
+                  <a href="mailto:info@myosyncclinic.com" className="text-brand-text/80 hover:text-brand-teal transition-colors">info@myosyncclinic.com</a>
                 </div>
               </div>
 

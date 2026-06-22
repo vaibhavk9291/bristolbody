@@ -47,39 +47,37 @@ export function Booking() {
       <div className="container mx-auto px-6 lg:px-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
           <div className="inline-block bg-brand-teal/10 border border-brand-teal/20 text-brand-teal font-bold px-4 py-1.5 rounded-full text-sm mb-6 uppercase tracking-wider">
-            Save 15% Today
+            Start Your Recovery
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-brand-navy tracking-tight">
-            Book Your NMS Consultation
+            Book Your Consultation
           </h2>
           <p className="mt-4 text-brand-text/70 text-lg max-w-2xl mx-auto">
-            Select a date and time that works for you. Full consultation usually £105 — now £89.
+            Select a date and time that works for you to begin your personalized physiotherapy treatment plan.
           </p>
         </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
           className="flex justify-center"
         >
           <AppointmentScheduler
-            userName="Spine, Body & Health"
+            userName="MyoSync Clinic"
             userAvatar="/favicon.ico"
-            meetingTitle="Initial Consultation & Treatment"
+            meetingTitle="Physiotherapy Consultation & Assessment"
             meetingType="In-Person at Clinic"
             duration="45 Minutes"
             timezone="Europe/London"
             availableDates={availableDates}
             timeSlots={timeSlots}
-            brandName="Spine Body Health"
+            brandName="MyoSync Clinic"
           />
         </motion.div>
       </div>

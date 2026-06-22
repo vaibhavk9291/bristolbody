@@ -10,21 +10,20 @@ export function Navigation() {
   const links = [
     { label: "Home", href: "#home" },
     { label: "About", href: "#about" },
-    { label: "Conditions", href: "#conditions" },
-    { label: "Treatment", href: "#treatment" },
-    { label: "Reviews", href: "#reviews" },
-    { label: "Blog", href: "#blog" },
+    { label: "Services", href: "#services" },
+    { label: "Team", href: "#team" },
+    { label: "Testimonials", href: "#testimonials" },
+    { label: "Gallery", href: "#gallery" },
+    { label: "Contact", href: "#contact" },
   ];
 
   return (
     <nav className="sticky top-0 z-50 bg-white shadow-sm w-full transition-all duration-300">
       <div className="px-6 lg:px-12 h-20 flex items-center justify-between">
         <Link href="/" className="flex items-center">
-          <img 
-            src="https://spinebodyhealth.co.uk/wp-content/uploads/2025/11/upscalemedia-transformed-1-scaled-1.png" 
-            alt="Spine, Body & Health" 
-            className="h-10 w-auto object-contain"
-          />
+          <span className="text-2xl font-bold tracking-tighter text-brand-navy">
+            Myo<span className="text-brand-blue">Sync</span>
+          </span>
         </Link>
 
         {/* Desktop Nav */}

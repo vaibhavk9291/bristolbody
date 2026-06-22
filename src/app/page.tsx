@@ -1,8 +1,11 @@
 import { Hero } from "@/components/Hero";
 import { TrustStrip } from "@/components/TrustStrip";
-import { Reviews } from "@/components/Reviews";
 import { Conditions } from "@/components/Conditions";
 import { HowItWorks } from "@/components/HowItWorks";
+import { Statistics } from "@/components/Statistics";
+import { Reviews } from "@/components/Reviews";
+import { Team } from "@/components/Team";
+import { Gallery } from "@/components/Gallery";
 import { Booking } from "@/components/Booking";
 import { FAQ } from "@/components/FAQ";
 import { Contact } from "@/components/Contact";
@@ -14,9 +17,12 @@ export default function Home() {
     <div className="flex flex-col w-full">
       <Hero />
       <TrustStrip />
-      <Reviews />
       <Conditions />
       <HowItWorks />
+      <Statistics />
+      <Reviews />
+      <Team />
+      <Gallery />
       <Booking />
       <FAQ />
       <Contact />

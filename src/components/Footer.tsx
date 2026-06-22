@@ -9,10 +9,10 @@ export function Footer() {
           {/* Col 1 */}
           <div className="flex flex-col gap-6">
             <div className="text-2xl font-bold text-white tracking-tight">
-              Spine, Body <span className="text-brand-teal">&</span> Health
+              Myo<span className="text-brand-blue">Sync</span> Clinic
             </div>
             <p className="text-white/70 leading-relaxed">
-              Expert NMS care for chronic pain. Science-driven. Results-focused. No guesswork.
+              Expert physiotherapy and rehabilitation services. Evidence-based. Results-focused.
             </p>
             <div className="flex gap-4">
               <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-brand-teal transition-colors" aria-label="Facebook">
@@ -25,29 +25,29 @@ export function Footer() {
 
           {/* Col 2 */}
           <div>
-            <h4 className="font-bold text-lg mb-6">ABOUT</h4>
+            <h4 className="font-bold text-lg mb-6">QUICK LINKS</h4>
             <ul className="space-y-3 text-white/70">
-              <li><Link href="#about" className="hover:text-brand-teal transition-colors">About Us</Link></li>
-              <li><Link href="#treatment" className="hover:text-brand-teal transition-colors">What To Expect</Link></li>
-              <li><Link href="#about" className="hover:text-brand-teal transition-colors">Meet The Experts</Link></li>
-              <li><Link href="#reviews" className="hover:text-brand-teal transition-colors">Success Stories</Link></li>
-              <li><Link href="#blog" className="hover:text-brand-teal transition-colors">Blog</Link></li>
-              <li><Link href="#contact" className="hover:text-brand-teal transition-colors">Location & Parking</Link></li>
+              <li><Link href="#about" className="hover:text-brand-teal transition-colors">Why Choose Us</Link></li>
+              <li><Link href="#services" className="hover:text-brand-teal transition-colors">Our Services</Link></li>
+              <li><Link href="#team" className="hover:text-brand-teal transition-colors">Meet The Team</Link></li>
+              <li><Link href="#gallery" className="hover:text-brand-teal transition-colors">Clinic Gallery</Link></li>
+              <li><Link href="#testimonials" className="hover:text-brand-teal transition-colors">Success Stories</Link></li>
+              <li><Link href="#contact" className="hover:text-brand-teal transition-colors">Contact Us</Link></li>
             </ul>
           </div>
 
           {/* Col 3 */}
           <div>
-            <h4 className="font-bold text-lg mb-6">CONDITIONS</h4>
+            <h4 className="font-bold text-lg mb-6">SERVICES</h4>
             <ul className="space-y-3 text-white/70">
-              <li><Link href="#conditions" className="hover:text-brand-teal transition-colors">Back Pain</Link></li>
-              <li><Link href="#conditions" className="hover:text-brand-teal transition-colors">Neck Pain</Link></li>
-              <li><Link href="#conditions" className="hover:text-brand-teal transition-colors">Sciatica</Link></li>
-              <li><Link href="#conditions" className="hover:text-brand-teal transition-colors">Slipped Disc</Link></li>
-              <li><Link href="#conditions" className="hover:text-brand-teal transition-colors">Nerve Pain</Link></li>
-              <li><Link href="#conditions" className="hover:text-brand-teal transition-colors">Low Back Pain</Link></li>
-              <li><Link href="#conditions" className="hover:text-brand-teal transition-colors">Migraines</Link></li>
-              <li><Link href="#conditions" className="hover:text-brand-teal transition-colors">Leg, Knee & Ankle Pain</Link></li>
+              <li><Link href="#services" className="hover:text-brand-teal transition-colors">Back Pain Treatment</Link></li>
+              <li><Link href="#services" className="hover:text-brand-teal transition-colors">Sports Injury Rehab</Link></li>
+              <li><Link href="#services" className="hover:text-brand-teal transition-colors">Neck Pain Relief</Link></li>
+              <li><Link href="#services" className="hover:text-brand-teal transition-colors">Post Surgical Rehab</Link></li>
+              <li><Link href="#services" className="hover:text-brand-teal transition-colors">Posture Correction</Link></li>
+              <li><Link href="#services" className="hover:text-brand-teal transition-colors">Manual Therapy</Link></li>
+              <li><Link href="#services" className="hover:text-brand-teal transition-colors">Dry Needling</Link></li>
+              <li><Link href="#services" className="hover:text-brand-teal transition-colors">Strength & Conditioning</Link></li>
             </ul>
           </div>
 
@@ -56,8 +56,8 @@ export function Footer() {
             <h4 className="font-bold text-lg mb-6">CONTACT</h4>
             <ul className="space-y-3 text-white/70 mb-8">
               <li><a href="tel:01908000000" className="text-brand-teal font-medium hover:underline">01908 XXX XXX</a></li>
-              <li><a href="mailto:info@spinebodyhealth.co.uk" className="hover:text-brand-teal transition-colors">info@spinebodyhealth.co.uk</a></li>
-              <li>Spine, Body & Health<br/>Milton Keynes, MK3 6EB</li>
+              <li><a href="mailto:info@myosyncclinic.com" className="hover:text-brand-teal transition-colors">info@myosyncclinic.com</a></li>
+              <li>MyoSync Clinic<br/>Milton Keynes, MK3 6EB</li>
             </ul>
             <Link href="/#book" className="inline-block border-2 border-brand-teal text-brand-teal px-6 py-2.5 rounded-full font-semibold hover:bg-brand-teal hover:text-white transition-colors">
               Book Consultation
@@ -67,7 +67,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-white/50 text-sm">
-          <p>© 2025 Spine, Body & Health. All Rights Reserved.</p>
+          <p>© 2025 MyoSync Clinic. All Rights Reserved.</p>
           <div className="flex gap-6">
             <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-white transition-colors">Terms of Use</Link>

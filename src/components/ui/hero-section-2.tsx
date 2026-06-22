@@ -3,7 +3,7 @@
 import React from 'react';
 import { cn } from "@/lib/utils";
 import { motion, Variants } from 'framer-motion';
-import { Globe, Phone, MapPin } from "lucide-react";
+import { Globe, Phone, MapPin, CheckCircle } from "lucide-react";
 
 // Icon component for contact details
 const InfoIcon = ({ type }: { type: 'website' | 'phone' | 'address' }) => {
@@ -29,6 +29,11 @@ interface HeroSectionProps extends Omit<React.HTMLAttributes<HTMLDivElement>, 't
     text: string;
     href: string;
   };
+  secondaryCallToAction?: {
+    text: string;
+    href: string;
+  };
+  trustIndicators?: string[];
   backgroundImage: string;
   contactInfo: {
     website: string;
@@ -38,7 +43,7 @@ interface HeroSectionProps extends Omit<React.HTMLAttributes<HTMLDivElement>, 't
 }
 
 const HeroSection = React.forwardRef<HTMLDivElement, HeroSectionProps>(
-  ({ className, logo, slogan, title, subtitle, callToAction, backgroundImage, contactInfo, ...props }, ref) => {
+  ({ className, logo, slogan, title, subtitle, callToAction, secondaryCallToAction, trustIndicators, backgroundImage, contactInfo, ...props }, ref) => {
     
     // Animation variants for the container to orchestrate children animations
     const containerVariants: Variants = {
@@ -104,12 +109,31 @@ const HeroSection = React.forwardRef<HTMLDivElement, HeroSectionProps>(
                         {title}
                     </motion.h1>
                     <motion.div className="my-8 h-1 w-20 bg-brand-teal rounded-full" variants={itemVariants}></motion.div>
-                    <motion.p className="mb-10 max-w-lg text-lg text-brand-text/70" variants={itemVariants}>
-                        {subtitle}
-                    </motion.p>
-                    <motion.a href={callToAction.href} className="inline-block px-8 py-3.5 bg-brand-teal text-white rounded-full text-sm font-bold tracking-widest transition-colors hover:bg-brand-teal/90 shadow-lg shadow-brand-teal/30" variants={itemVariants}>
-                        {callToAction.text}
-                    </motion.a>
+                    <motion.div className="mb-10" variants={itemVariants}>
+                        <p className="max-w-lg text-lg text-brand-text/70 mb-6">
+                            {subtitle}
+                        </p>
+                        {trustIndicators && (
+                          <ul className="space-y-2 mb-6">
+                            {trustIndicators.map((indicator, idx) => (
+                              <li key={idx} className="flex items-center text-sm font-semibold text-brand-navy">
+                                <CheckCircle className="w-5 h-5 text-brand-teal mr-2" />
+                                {indicator}
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+                    </motion.div>
+                    <motion.div className="flex flex-wrap items-center gap-4" variants={itemVariants}>
+                      <a href={callToAction.href} className="inline-block px-8 py-3.5 bg-brand-navy text-white rounded-full text-sm font-bold tracking-widest transition-colors hover:bg-brand-navy/90 shadow-lg shadow-brand-navy/30">
+                          {callToAction.text}
+                      </a>
+                      {secondaryCallToAction && (
+                        <a href={secondaryCallToAction.href} className="inline-block px-8 py-3.5 bg-white border-2 border-brand-teal text-brand-teal rounded-full text-sm font-bold tracking-widest transition-colors hover:bg-brand-teal hover:text-white">
+                            {secondaryCallToAction.text}
+                        </a>
+                      )}
+                    </motion.div>
                 </motion.main>
             </div>
 

@@ -6,58 +6,58 @@ import { Star } from "lucide-react";
 
 const testimonials = [
   {
-    text: "I spent years being told by the NHS I'd just have to manage my pain. 6 weeks with Spine, Body & Health and I can move like I'm 20 again. Absolutely life-changing.",
+    text: "I spent years managing chronic back pain. 6 weeks of physiotherapy with MyoSync Clinic and I can move freely again. Absolutely life-changing.",
     image: "https://randomuser.me/api/portraits/women/44.jpg",
     name: "Sarah M.",
-    role: "Verified Patient",
+    role: "Back Pain Recovery",
   },
   {
-    text: "It's amazing — I can walk again without pain! Thanks to them I can play golf again. The team genuinely cares about getting you better, not just treating symptoms.",
+    text: "It's amazing — I can run again without knee pain! Thanks to their sports rehab program I am back to peak performance. The team genuinely cares.",
     image: "https://randomuser.me/api/portraits/men/32.jpg",
     name: "James T.",
-    role: "Verified Patient",
+    role: "Sports Injury Rehab",
   },
   {
-    text: "Professional, thorough and results-driven. Unlike any clinic I've visited before. My sciatica is gone after years of suffering. Can't recommend highly enough.",
+    text: "Professional, thorough and results-driven. My neck stiffness and tension headaches are gone after years of suffering. Can't recommend highly enough.",
     image: "https://randomuser.me/api/portraits/women/68.jpg",
     name: "Rachel K.",
-    role: "Verified Patient",
+    role: "Neck Pain Relief",
   },
   {
-    text: "The nerve testing they do finds things others miss entirely. My shoulder pain was actually caused by a pelvis issue — who knew! Sorted in weeks.",
+    text: "The movement analysis they do finds things others miss entirely. My shoulder pain was actually caused by poor posture — who knew! Sorted in weeks.",
     image: "https://randomuser.me/api/portraits/men/46.jpg",
     name: "David P.",
-    role: "Verified Patient",
+    role: "Posture Correction",
   },
   {
-    text: "Friendly, welcoming, and incredibly knowledgeable. The regenerative approach makes so much more sense than just taking painkillers forever.",
+    text: "Friendly, welcoming, and incredibly knowledgeable. Their post-surgical rehab program helped me regain my strength faster than my surgeon expected.",
     image: "https://randomuser.me/api/portraits/women/12.jpg",
     name: "Emma W.",
-    role: "Verified Patient",
+    role: "Post-Surgery Recovery",
   },
   {
-    text: "The best NMS clinic in Milton Keynes by far. After a few sessions of their integration therapy, my chronic lower back pain has completely vanished.",
+    text: "The best physiotherapy clinic by far. After a few sessions of manual therapy and dry needling, my chronic lower back pain has completely vanished.",
     image: "https://randomuser.me/api/portraits/men/22.jpg",
     name: "Michael R.",
-    role: "Verified Patient",
+    role: "Back Pain Recovery",
   },
   {
-    text: "I was skeptical at first, but their science-backed approach works wonders. The clinical team is fantastic and they explain everything so clearly.",
+    text: "I was skeptical at first, but their evidence-based approach works wonders. The clinical team is fantastic and they explain everything so clearly.",
     image: "https://randomuser.me/api/portraits/women/33.jpg",
     name: "Sophie L.",
-    role: "Verified Patient",
+    role: "Sports Injury Rehab",
   },
   {
-    text: "Finally, a place that actually fixes the root cause rather than just masking it. No more constant painkillers for my neck stiffness!",
+    text: "Finally, a place that actually fixes the root cause rather than just masking it. No more constant painkillers for my sports injuries!",
     image: "https://randomuser.me/api/portraits/men/55.jpg",
     name: "Thomas B.",
-    role: "Verified Patient",
+    role: "Sports Injury Rehab",
   },
   {
     text: "A truly premium experience from the moment you walk in. Worth every penny for the quality of care and the long-term results you get.",
     image: "https://randomuser.me/api/portraits/women/9.jpg",
     name: "Olivia H.",
-    role: "Verified Patient",
+    role: "Post-Surgery Recovery",
   },
 ];
 
@@ -67,7 +67,7 @@ const thirdColumn = testimonials.slice(6, 9);
 
 export function Reviews() {
   return (
-    <section id="reviews" className="bg-brand-light py-24 relative overflow-hidden">
+    <section id="testimonials" className="bg-brand-light py-24 relative overflow-hidden">
       <div className="container z-10 mx-auto px-6 lg:px-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

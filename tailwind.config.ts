@@ -10,10 +10,11 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          navy: "#0A1628",
-          teal: "#00B4D8",
-          light: "#F8FAFB",
-          text: "#1A2332",
+          navy: "#0B1F3A",
+          teal: "#00C2A8",
+          blue: "#1E7BFF",
+          light: "#F8FAFC",
+          text: "#1A1A1A",
         },
         background: "var(--background)",
         foreground: "var(--foreground)",

@@ -14,38 +14,73 @@ import {
 const conditionsData = [
   {
     id: "back-pain",
-    title: "Chronic Back Pain",
-    description: "Comprehensive assessment and targeted treatments to eliminate persistent lower and upper back pain safely.",
+    title: "Back Pain Treatment",
+    description: "Targeted physiotherapy treatments to eliminate persistent lower and upper back pain safely and effectively.",
     href: "#",
     image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1000&auto=format&fit=crop",
   },
   {
-    id: "sciatica",
-    title: "Sciatica Relief",
-    description: "Specialised nerve decompression and integration therapy to relieve sharp, shooting pain down your legs.",
-    href: "#",
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1000&auto=format&fit=crop",
-  },
-  {
     id: "neck-pain",
-    title: "Neck Pain & Stiffness",
+    title: "Neck Pain Treatment",
     description: "Restoring mobility and addressing the root causes of cervical pain, tension headaches, and stiffness.",
     href: "#",
     image: "https://images.unsplash.com/photo-1584515933487-779824d29309?q=80&w=1000&auto=format&fit=crop",
   },
   {
-    id: "slipped-disc",
-    title: "Slipped Disc Recovery",
-    description: "Non-surgical, evidence-based rehabilitation protocols to heal herniated and bulging spinal discs.",
+    id: "sports-injury",
+    title: "Sports Injury Rehabilitation",
+    description: "Evidence-based rehab protocols to get athletes back to peak performance safely.",
+    href: "#",
+    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1000&auto=format&fit=crop",
+  },
+  {
+    id: "post-surgical",
+    title: "Post Surgical Rehabilitation",
+    description: "Guided recovery plans to restore strength and range of motion after orthopedic surgeries.",
+    href: "#",
+    image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1000&auto=format&fit=crop",
+  },
+  {
+    id: "shoulder-pain",
+    title: "Shoulder Pain Treatment",
+    description: "Expert care for rotator cuff injuries, frozen shoulder, and impingement syndromes.",
     href: "#",
     image: "https://images.unsplash.com/photo-1559757175-9b81313e89a5?q=80&w=1000&auto=format&fit=crop",
   },
   {
-    id: "nerve-pain",
-    title: "Nerve Pain",
-    description: "Advanced neurological diagnostics and treatments to resolve numbness, tingling, and radiating pain.",
+    id: "knee-pain",
+    title: "Knee Pain Rehabilitation",
+    description: "Strengthening and mobility therapies for runner's knee, ligament issues, and osteoarthritis.",
     href: "#",
     image: "https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=1000&auto=format&fit=crop",
+  },
+  {
+    id: "posture",
+    title: "Posture Correction",
+    description: "Biomechanical assessments and targeted exercises to fix imbalances and prevent recurring pain.",
+    href: "#",
+    image: "https://images.unsplash.com/photo-1552674605-15cff24f3c88?q=80&w=1000&auto=format&fit=crop",
+  },
+  {
+    id: "manual-therapy",
+    title: "Manual Therapy",
+    description: "Hands-on joint mobilization and soft tissue manipulation to reduce pain and increase flexibility.",
+    href: "#",
+    image: "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=1000&auto=format&fit=crop",
+  },
+  {
+    id: "dry-needling",
+    title: "Dry Needling",
+    description: "Precision treatment using fine needles to release muscle tension and deactivate trigger points.",
+    href: "#",
+    image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=1000&auto=format&fit=crop",
+  },
+  {
+    id: "strength",
+    title: "Strength & Conditioning",
+    description: "Personalised exercise programming to build resilience, prevent injuries, and enhance longevity.",
+    href: "#",
+    image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1000&auto=format&fit=crop",
   },
 ];
 
@@ -72,15 +107,15 @@ export function Conditions() {
   }, [carouselApi]);
 
   return (
-    <section id="conditions" className="py-24 bg-brand-navy text-white">
+    <section id="services" className="py-24 bg-brand-navy text-white">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="mb-12 flex items-end justify-between md:mb-16">
           <div className="flex flex-col gap-4">
             <h2 className="text-3xl font-bold md:text-4xl lg:text-5xl tracking-tight">
-              What We Treat
+              Our Services
             </h2>
             <p className="max-w-lg text-white/70 text-lg">
-              Our Neuro-Sync Regenerative Integration (NSRI) approach treats the root cause of these conditions—without surgery or painkillers.
+              Evidence-based physiotherapy and rehabilitation programs designed to restore mobility, reduce pain, and get you back to peak performance.
             </p>
           </div>
           <div className="hidden shrink-0 gap-3 md:flex">

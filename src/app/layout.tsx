@@ -7,13 +7,13 @@ import { Navigation } from "@/components/Navigation";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Back Pain Treatment Milton Keynes | Spine, Body & Health",
-  description: "Expert NMS consultancy for back pain, sciatica & nerve pain in Milton Keynes. Book your consultation today — save 15%.",
+  title: "MyoSync Clinic | Physiotherapy & Rehabilitation Specialists",
+  description: "Expert physiotherapy and rehabilitation services for pain relief, sports injuries, posture correction and recovery. Book your consultation today.",
   openGraph: {
-    title: "Back Pain Treatment Milton Keynes | Spine, Body & Health",
-    description: "Expert NMS consultancy for back pain, sciatica & nerve pain in Milton Keynes. Book your consultation today — save 15%.",
-    url: "https://spinebodyhealth.co.uk",
-    siteName: "Spine, Body & Health",
+    title: "MyoSync Clinic | Physiotherapy & Rehabilitation Specialists",
+    description: "Expert physiotherapy and rehabilitation services for pain relief, sports injuries, posture correction and recovery. Book your consultation today.",
+    url: "https://myosyncclinic.com",
+    siteName: "MyoSync Clinic",
     images: [
       {
         url: "https://spinebodyhealth.co.uk/wp-content/uploads/2025/11/upscalemedia-transformed-1-scaled-1.png",

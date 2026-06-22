@@ -6,18 +6,18 @@ import { ChevronDown } from "lucide-react";
 
 export function FAQ() {
   const faqs = [
-    { q: "Does the treatment hurt?", a: "Yes it can, but pain-free options are available. We have a range of therapeutic tools to suit every tolerance level." },
-    { q: "Does it work for everyone?", a: "88% of our patients get better — significantly higher than spinal surgery (24% success rate). Nothing works for everyone, but our track record speaks for itself." },
-    { q: "Is it backed by science?", a: "Yes. Our Neuro-Sync Regenerative Integration (NSRI) approach is grounded in extensive scientific evidence. Read more on our website." },
-    { q: "Are your staff qualified?", a: "All clinical staff hold healthcare degrees and multiple post-graduate certifications. Our lead practitioners are NMS Consultants." },
-    { q: "How much does it cost?", a: "The consultation is currently £89 (usually £105). Long-term cost depends on your condition — we always aim to minimise the number of visits." },
-    { q: "How many sessions will I need?", a: "This depends on your condition's severity and your response. We'll always minimise sessions needed and give you a clear care plan." },
-    { q: "What conditions do you treat?", a: "Back pain, neck pain, sciatica, slipped discs, nerve pain, migraines, knee/ankle pain and more. Call us if your condition isn't listed." },
-    { q: "Is my consultation private?", a: "Absolutely. Your data and consultation details are completely confidential." },
-    { q: "Is there a contract?", a: "No. We never bind clients to contracts. You can start and stop as your life requires." },
-    { q: "What happens after the consultation?", a: "Your specialist walks you through your recommended care plan. No obligation to proceed — just honest, expert advice." },
-    { q: "Can I bring someone with me?", a: "Yes, you're welcome to bring a family member, friend or carer to your consultation." },
-    { q: "What is NSRI?", a: "Neuro-Sync Regenerative Integration synchronises brain-body communication, removes neurological interference and allows your body to enter a natural regenerative phase." }
+    { q: "Do physiotherapy treatments hurt?", a: "Some techniques may cause mild discomfort, but we always work within your tolerance. We have a range of therapeutic tools to suit every patient." },
+    { q: "Does it work for everyone?", a: "We have a very high success rate for musculoskeletal issues. Nothing works for absolutely everyone, but our evidence-based track record speaks for itself." },
+    { q: "Is your approach backed by science?", a: "Yes. All our treatments are grounded in the latest evidence-based physiotherapy and rehabilitation research." },
+    { q: "Are your staff qualified?", a: "Absolutely. All our clinical staff hold university degrees in Physiotherapy and are registered with relevant professional bodies." },
+    { q: "How much does it cost?", a: "The initial consultation and assessment is currently £89. Follow-up sessions depend on your treatment plan." },
+    { q: "How many sessions will I need?", a: "This depends on your condition's severity. We will always aim to minimise the sessions needed and give you a clear, honest care plan." },
+    { q: "What conditions do you treat?", a: "Back pain, neck pain, sports injuries, post-surgical rehabilitation, knee/ankle pain, and postural issues. Call us if your condition isn't listed." },
+    { q: "Is my consultation private?", a: "Yes. Your medical data and consultation details are strictly confidential." },
+    { q: "Do I need a doctor's referral?", a: "No, you do not need a referral to see our physiotherapists. You can book directly with us." },
+    { q: "What happens after the consultation?", a: "Your physiotherapist will walk you through your personalized recovery plan. There is no obligation to proceed—just honest, expert advice." },
+    { q: "What should I wear?", a: "Please wear loose, comfortable clothing that allows us to assess your movement and access the area of concern." },
+    { q: "Can I bring someone with me?", a: "Yes, you're welcome to bring a family member or friend to your consultation." }
   ];
 
   const mid = Math.ceil(faqs.length / 2);
