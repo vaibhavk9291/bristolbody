@@ -29,7 +29,7 @@ export default function CuppingPage() {
           <ul className="list-disc pl-6 space-y-3 mb-6">
             <li><strong>Relief from Muscle Pain & Tension:</strong> Cupping can effectively treat sore muscles and alleviate chronic pain by enhancing blood circulation and breaking down knots, adhesions, and tight muscles.</li>
             <li><strong>Boosted Blood Circulation:</strong> The suction process stimulates circulation, promoting oxygen and nutrient delivery to tissues and helping remove waste products and inflammation.</li>
-            <li><strong>Detoxification:</strong> By encouraging lymphatic drainage and promoting removal of toxins, cupping supports the body's natural detoxification process.</li>
+            <li><strong>Detoxification:</strong> By encouraging lymphatic drainage and promoting removal of toxins, cupping supports the body&apos;s natural detoxification process.</li>
             <li><strong>Stress Relief & Relaxation:</strong> Cupping therapy helps reduce stress by relaxing the nervous system and easing tension in the body.</li>
           </ul>
 

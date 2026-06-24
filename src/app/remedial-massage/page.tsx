@@ -27,7 +27,7 @@ export default function RemedialMassagePage() {
             Remedial Massage can also release tight muscles that create nerve issues due to that tightness pressing on a nerve — causing heaviness, pins & needles, tingling, pain, numbness or lack of sensation over the length of the relevant nerve pathway.
           </p>
           <p>
-            In essence, a large range of techniques used in Remedial Massage are identical to those used in sports massage. However, "Sports Massage" as a term is often confusing to people seeking treatment, as it sounds only relevant to people who play sport.
+            In essence, a large range of techniques used in Remedial Massage are identical to those used in sports massage. However, &quot;Sports Massage&quot; as a term is often confusing to people seeking treatment, as it sounds only relevant to people who play sport.
           </p>
           <p>
             The term Remedial Massage came about in some ways to address this confusion. Think of it as a Sports Massage for the non-sporty. All techniques and advice will be based on your specific situation, however your issues came about. If you are non-sporty or your issue is not related to sport or exercise, feel free to book a Remedial Massage and know you are in the right hands to get you back to functioning optimally.

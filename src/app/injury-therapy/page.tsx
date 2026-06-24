@@ -42,7 +42,7 @@ export default function InjuryTherapyPage() {
 
           <div className="bg-brand-light/50 p-6 rounded-xl border border-gray-100 my-8">
             <p className="font-medium text-brand-navy text-lg italic">
-              "Whether you're looking to overcome an injury or optimise your athletic performance, we have the expertise to guide you. If you are in pain, or your injury won't settle — address it now. Remember: Pain is not normal!"
+              &quot;Whether you&apos;re looking to overcome an injury or optimise your athletic performance, we have the expertise to guide you. If you are in pain, or your injury won&apos;t settle — address it now. Remember: Pain is not normal!&quot;
             </p>
           </div>
 

@@ -73,7 +73,7 @@ export function Conditions() {
               Our Services
             </h2>
             <p className="max-w-lg text-white/70 text-lg">
-              Our treatments address the root cause — not just the symptom. Whether you're an athlete or a desk worker, we help every body function optimally.
+              Our treatments address the root cause — not just the symptom. Whether you&apos;re an athlete or a desk worker, we help every body function optimally.
             </p>
           </div>
           <div className="hidden shrink-0 gap-3 md:flex">

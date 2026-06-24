@@ -40,7 +40,7 @@ export default function LocationsPage() {
             </h2>
             <div className="w-20 h-1 bg-brand-teal rounded-full mx-auto mt-6 mb-8" />
             <p className="mt-4 text-brand-text/70 text-lg max-w-2xl mx-auto">
-              Please select the location you'd like to book your appointment.
+              Please select the location you&apos;d like to book your appointment.
             </p>
           </motion.div>
 
